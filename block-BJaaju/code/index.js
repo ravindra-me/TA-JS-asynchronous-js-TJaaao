@@ -10,11 +10,11 @@ function addImage() {
   let xhr = new XMLHttpRequest();
   xhr.open(
     'GET',
-    'https://api.unsplash.com/photos/random/?client_id=cbktwRcMdPLPnGM1cpYPvzejdq3_KwSZ_bQjNLZNj1g'
+    'https://api.unsplash.com/photos/random?query=office&client_id=cbktwRcMdPLPnGM1cpYPvzejdq3_KwSZ_bQjNLZNj1g&count=10'
   );
   xhr.onload = function () {
     let xhrImgs = JSON.parse(xhr.response);
-    console.log(xhrImgs);
+    createUi(xhrImgs);
   };
   xhr.send();
 }
@@ -34,6 +34,8 @@ function createUi(data) {
   console.log(images);
   imageconatiner.innerHTML = images;
 }
+
+addImage();
 
 function changeHandle(event) {
   if (event.keyCode === 13) {
