@@ -8,19 +8,80 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container flex justify-center align-center flex-column">
-      <div class="width-60 input-box">
-        <input type="text" placeholder="Enter the GitHub User id " />
+    <header>
+      <div class="container flex justify-center align-center flex-column">
+        <h1 class="primary-heading">Github User Finder</h1>
+        <div class="width-60 input-box">
+          <input type="text" placeholder="Enter the GitHub User id " />
+        </div>
       </div>
-      <div class="font-0 width-30">
-        <img
-          src="https://avatars.githubusercontent.com/u/55210599?s=460&u=86785ca156d193b4466a44611e9a6bf61b682de8&v=4"
-          alt=""
-          class="img"
-        />
-      </div>
-      <h2 class="secondary-heading">Ravindra Singh</h2>
-      <div></div>
-    </div>
+    </header>
+    <main>
+      <section class="profile-section padding">
+        <div class="container">
+          <div class="font-0 width-30 flex justify-center">
+            <img
+              src="https://avatars.githubusercontent.com/u/55210599?s=460&u=86785ca156d193b4466a44611e9a6bf61b682de8&v=4"
+              alt=""
+              class="img profile-img"
+            />
+          </div>
+          <h2 class="secondary-heading text-center username">Ravindra Singh</h2>
+          <div
+            class="follower-container flex justify-center align-center flex-column"
+          >
+            <h3>Follower: <span class="numberOf-follower">8</span></h3>
+            <h3>Following: <span class="numberOf-following">8</span></h3>
+          </div>
+        </div>
+      </section>
+      <section class="follower-sec padding">
+        <div class="container">
+          <h2 class="secondary-heading">Follower</h2>
+          <ul class="follower-box flex justify-between">
+            <li class="flex-18 flex justify-center flex-column align-center">
+              <img
+                src="https://avatars.githubusercontent.com/u/55210599?s=460&u=86785ca156d193b4466a44611e9a6bf61b682de8&v=4"
+                alt=""
+              />
+              <h3>Ravindra Singh</h3>
+            </li>
+            <li class="flex-18 flex justify-center flex-column align-center">
+              <img
+                src="https://avatars.githubusercontent.com/u/55210599?s=460&u=86785ca156d193b4466a44611e9a6bf61b682de8&v=4"
+                alt=""
+                class="img"
+              />
+              <h3>Ravindra Singh</h3>
+            </li>
+            <li class="flex-18 flex justify-center flex-column align-center">
+              <img
+                src="https://avatars.githubusercontent.com/u/55210599?s=460&u=86785ca156d193b4466a44611e9a6bf61b682de8&v=4"
+                alt=""
+                class="img"
+              />
+              <h3>Ravindra Singh</h3>
+            </li>
+            <li class="flex-18 flex justify-center flex-column align-center">
+              <img
+                src="https://avatars.githubusercontent.com/u/55210599?s=460&u=86785ca156d193b4466a44611e9a6bf61b682de8&v=4"
+                alt=""
+                class="img"
+              />
+              <h3>Ravindra Singh</h3>
+            </li>
+            <li class="flex-18 flex justify-center flex-column align-center">
+              <img
+                src="https://avatars.githubusercontent.com/u/55210599?s=460&u=86785ca156d193b4466a44611e9a6bf61b682de8&v=4"
+                alt=""
+                class="img"
+              />
+              <h3>Ravindra Singh</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
   </body>
 </html>
