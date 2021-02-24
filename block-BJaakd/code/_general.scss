@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font: 16px;
+}
+body {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-item-center {
+  align-items: center;
+}
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+.width-50 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-template-column-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-gap {
+  gap: 1rem;
+}
+.font-0 {
+  font-size: 0;
+}
