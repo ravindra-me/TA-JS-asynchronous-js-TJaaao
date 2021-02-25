@@ -30,7 +30,12 @@ function createUi(data = []) {
 let data = fetch(
   'https://raw.githubusercontent.com/nnnkit/json-data-collections/master/got-houses.json'
 )
-  .then((data) => data.json())
+  .then((data) => {
+    if (!data.ok) {
+      throw new Error(`error happen: ${data.status}`);
+    }
+    return data.json();
+  })
   .then((data) => {
     let ui = data['houses'].map((ele, i) => {
       let obj = {};
@@ -63,4 +68,5 @@ let data = fetch(
         .flat()
         .flat()
     );
-  });
+  })
+  .catch((error) => console.log(error));
