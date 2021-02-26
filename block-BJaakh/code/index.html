@@ -2,13 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Assignments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO Application</title>
+    <script
+      src="https://kit.fontawesome.com/379acff5c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container flex justify-center flex-column align-center">
+      <h1 class="heading">todos</h1>
+      <div class="main flex align-center flex-column">
+        <div class="inputbox full-width">
+          <input
+            type="text"
+            class="input"
+            name="input"
+            placeholder="What need to be done?"
+          />
+        </div>
+        <ul class="todo-list full-width">
+          <!-- <li class="list-element flex align-center justify-between ">
+            <div class="check">
+            </div>
+            <input type="text" class="edit-text display-none">
+            <p class="text ">lorem </p>
+            <button class="delete-btn">❌</button>
+          </li> -->
+        </ul>
+        <footer class="flex justify-between full-width align-center">
+          <div>
+            <p><span class="no-item">0</span> item left</p>
+          </div>
+          <div class="footer-a flex align-center">
+            <a href="#" class="all">All</a>
+            <a href="#" class="active">Active</a>
+            <a href="#" class="completed">Completed</a>
+          </div>
+          <div>
+            <a href="#" class="clear">clear Completed</a>
+          </div>
+        </footer>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
