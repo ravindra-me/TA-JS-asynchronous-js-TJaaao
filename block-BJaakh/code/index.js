@@ -103,9 +103,7 @@ function addTodoes() {
       createTodo(data.todos);
     });
 }
-
 addTodoes();
-
 input.addEventListener('keyup', (event) => {
   if (event.keyCode === 13) {
     let data = {
